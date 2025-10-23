@@ -1,5 +1,5 @@
 .header {
-    background-color: #e4b93f; /* тепліший, не такий яскравий жовтий */
+    background-color: #e4b93f;
     display: flex;
     align-items: center;
     justify-content: space-between;

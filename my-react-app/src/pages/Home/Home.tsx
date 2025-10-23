@@ -2,7 +2,6 @@ import Header from "../../components/Header/Header";
 import "../../styles/Footer.css";
 import styles from "./Home.module.css";
 
-// 🖼️ Імпортуємо картинки
 import burgerImage from "../../assets/burger.png";
 import friesImage from "../../assets/fries.png";
 

@@ -3,7 +3,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* прибирає будь-які скроли */
+    overflow: hidden;
 }
 
 .main {
@@ -57,7 +57,7 @@
     background: #333;
 }
 
-/* Контейнер для зображень */
+
 .images {
     position: relative;
     width: 600px;
@@ -79,23 +79,23 @@
 .fries {
     width: 400px;
     position: absolute;
-    right: -180px; /* трішки вліво, щоб гарно лягала */
+    right: -180px;
     bottom: -142px;
-    z-index: 2; /* картопля поверх */
+    z-index: 2;
 }
 
-/* Глобальні стилі */
+
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* прибирає горизонтальний */
-    overflow-y: auto;   /* дозволяє вертикальний */
+    overflow-x: hidden;
+    overflow-y: auto;
     height: auto;
 }
 footer {
     background: #fff;
     text-align: center;
-    padding: 5px 0; /* 🔽 зменшуємо висоту */
+    padding: 5px 0;
     color: #555;
     font-size: 14px;
 }
