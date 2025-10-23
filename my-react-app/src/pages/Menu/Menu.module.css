@@ -1,3 +1,38 @@
-.page { min-height: 100dvh; display: flex; flex-direction: column; }
-.main { flex: 1; padding: 24px; max-width: 1080px; margin: 0 auto; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff8e1;
+}
+
+.main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #111;
+    font-weight: 600;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* Білий футер */
+.footer {
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-top: auto;
+}

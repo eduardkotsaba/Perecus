@@ -1,16 +1,37 @@
-import styles from "./Home.module.css";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import "../../styles/Footer.css";
+import styles from "./Home.module.css";
+
+// 🖼️ Імпортуємо картинки
+import burgerImage from "../../assets/burger.png";
+import friesImage from "../../assets/fries.png";
 
 export default function Home() {
     return (
         <div className={styles.page}>
             <Header />
+
             <main className={styles.main}>
-                <h1>Скуштуй найсоковитіші бургери</h1>
-                <a className={styles.cta} href="/menu">Замовити зараз</a>
+                <div className={styles.hero}>
+                    <div className={styles.text}>
+                        <h1>Скуштуй найсоковитіші бургери міста!</h1>
+                        <p>Швидка доставка, свіжі інгредієнти та неперевершений смак.</p>
+                        <a href="/menu" className={styles.cta}>
+                            Замовити зараз
+                        </a>
+                    </div>
+
+                    <div className={styles.images}>
+                        <img src={friesImage} alt="Картопля" className={styles.fries} />
+                        <img src={burgerImage} alt="Бургер" className={styles.burger} />
+                    </div>
+                </div>
             </main>
-            <Footer />
+
+            <footer className="footer">
+                © 2025 Перекус. Всі права захищені.
+            </footer>
+
         </div>
     );
 }

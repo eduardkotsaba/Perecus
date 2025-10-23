@@ -1,29 +1,35 @@
+
 import styles from "./AuthModal.module.css";
 
-type Props = {
-    open: boolean;
+interface AuthModalProps {
     onClose: () => void;
-};
+}
 
-export default function AuthModal({ open, onClose }: Props) {
-    if (!open) return null;
-
+export default function AuthModal({ onClose }: AuthModalProps) {
     return (
-        <div className={styles.backdrop} onClick={onClose}>
-            <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-                <h2 className={styles.title}>Вхід</h2>
-                <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-                    <label>
-                        Email
-                        <input type="email" required />
-                    </label>
-                    <label>
-                        Пароль
-                        <input type="password" required />
-                    </label>
-                    <button type="submit" className={styles.submit}>Увійти</button>
+        <div className={styles.overlay}>
+            <div className={styles.modal}>
+                <h2>Вхід</h2>
+
+                <form className={styles.form}>
+                    <label>Email</label>
+                    <input type="email" placeholder="Введіть ваш email" required />
+
+                    <label>Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" required />
+
+                    <button type="submit" className={styles.loginBtn}>
+                        Увійти
+                    </button>
+
+                    <button
+                        type="button"
+                        className={styles.closeBtn}
+                        onClick={onClose}
+                    >
+                        Закрити
+                    </button>
                 </form>
-                <button className={styles.close} onClick={onClose}>Закрити</button>
             </div>
         </div>
     );
