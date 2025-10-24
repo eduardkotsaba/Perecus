@@ -1,0 +1,37 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff8e1;
+}
+
+.main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #111;
+    font-weight: 600;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer {
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-top: auto;
+}

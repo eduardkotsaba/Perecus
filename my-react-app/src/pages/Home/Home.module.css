@@ -1,0 +1,101 @@
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    background: #fff8e1;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.cta {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.cta:hover {
+    background: #333;
+}
+
+
+.images {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    overflow: visible;
+}
+
+/* Бургер */
+.burger {
+    width: 520px;
+    height: auto;
+    position: absolute;
+    right: -360px;
+    bottom: -100px;
+    z-index: 1;
+}
+
+/* Картопля */
+.fries {
+    width: 400px;
+    position: absolute;
+    right: -180px;
+    bottom: -142px;
+    z-index: 2;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+}
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
