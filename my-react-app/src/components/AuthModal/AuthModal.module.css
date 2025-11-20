@@ -95,3 +95,12 @@ input:focus {
         transform: scale(1);
     }
 }
+
+.error {
+    color: #e53935;
+    background: #ffe7e7;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px 0 12px;
+    font-size: 14px;
+}
