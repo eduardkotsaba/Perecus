@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { MenuItem, OrderPayload } from "../types";
 
-const MENU_URL = "/menu.json";
+const MENU_URL = "https://mocki.io/v1/130d62f3-12a4-4fa3-ad22-de99c730393f";
 const ORDER_URL = "https://jsonplaceholder.typicode.com/posts";
 
 export function useMenu() {
