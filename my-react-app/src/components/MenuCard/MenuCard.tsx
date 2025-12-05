@@ -5,7 +5,7 @@ type MenuCardProps = {
     title: string;
     description: string;
     price: string;
-    onAdd: () => void;        // ← новий проп
+    onAdd: () => void;
 };
 
 export default function MenuCard({ image, title, description, price, onAdd }: MenuCardProps) {
