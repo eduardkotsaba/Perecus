@@ -46,3 +46,7 @@
 .authBtn:hover {
     background: #333;
 }
+
+.active {
+    text-decoration: underline;
+}

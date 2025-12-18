@@ -5,9 +5,10 @@ type MenuCardProps = {
     title: string;
     description: string;
     price: string;
+    onAdd: () => void;
 };
 
-export default function MenuCard({ image, title, description, price }: MenuCardProps) {
+export default function MenuCard({ image, title, description, price, onAdd }: MenuCardProps) {
     return (
         <div className={styles.card}>
             <img src={image} alt={title} className={styles.image} />
@@ -15,7 +16,9 @@ export default function MenuCard({ image, title, description, price }: MenuCardP
             <p className={styles.description}>{description}</p>
             <div className={styles.footer}>
                 <span className={styles.price}>{price}</span>
-                <button className={styles.button}>Додати</button>
+                <button className={styles.button} onClick={onAdd}>
+                    Додати
+                </button>
             </div>
         </div>
     );
